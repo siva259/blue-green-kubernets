@@ -1,3 +1,3 @@
 resources:
-    - deploymentblue.yaml
-    - deploymentgreen.yaml
+    - deploymentblue.yml
+    - deploymentgreen.yml
