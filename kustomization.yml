@@ -4,5 +4,5 @@ bases:
 - ../blue-green-kubernets/service/
 resources:
     - ms.yml
-	- pod.yml
-	- podstage.yml
+    - pod.yml
+    - podstage.yml
