@@ -1,0 +1,8 @@
+bases:
+- ../blue-green-kubernets/deployment/blue
+- ../blue-green-kubernets/deployment/green
+- ../blue-green-kubernets/service/
+resources:
+    - ms.yml
+	- pod.yml
+	- podstage.yml

@@ -1,0 +1,22 @@
+apiVerision: apps/v1
+kind: Deployment
+metadata:
+  name: devops-blue
+  namespace: devops
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+	  app: devops
+	  version: blue
+  template:
+    metadata:
+	  labels:
+	    app: devops
+		version: blue
+	spec:
+	  containers:
+	  - name: devops
+	    image: vipindevops/blue-green:1.0
+		ports:
+		- containerPort: 80

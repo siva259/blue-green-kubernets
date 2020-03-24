@@ -1,0 +1,22 @@
+apiVerision: apps/v1
+kind: Deployment
+metadata:
+  name: devops-green
+  namespace: devops
+spec:
+  replicas: 0
+  selector:
+    matchLabels:
+	  app: devops
+	  version: green
+  template:
+    metadata:
+	  labels:
+	    app: devops
+		version: green
+	spec:
+	  containers:
+	  - name: devops
+	    image: vipindevops/blue-green:1.0
+		ports:
+		- containerPort: 80

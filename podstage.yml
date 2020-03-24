@@ -5,7 +5,7 @@ metadata:
    namespace: devops
 spec:
   rules:
-  - host: devops.example.com
+  - host: devopsstage.example.com
     http:
 	  paths:
 	  - path: /
